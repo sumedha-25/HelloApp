@@ -1,9 +1,13 @@
 public class HelloApp {
     public static void main(String[] args) {
+        String names;
+
         if (args.length > 0) {
-            System.out.println("Hello, " + args[0] + "!");
+            names = String.join(", ", args);
         } else {
-            System.out.println("Hello, World!");
+            names = "World";
         }
+
+        System.out.println("Hello, " + names + "!");
     }
 }
